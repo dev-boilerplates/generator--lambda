@@ -52,6 +52,8 @@ Access-Control-Expose-Headers	: "*",
 Access-Control-Allow-Headers 	: "*"
 ```
 
+
+
 ## AWS Logs
 
 In the Lambda app use `AWS.config.logger = console;` to output to the AWS event logger. Where you can find in the Logs category within **CloudWatch**
