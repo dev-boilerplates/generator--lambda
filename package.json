@@ -1,0 +1,12 @@
+{
+  "name": "LambdaFunction",
+  "version": "0.0.1",
+  "description": "Lambda Function boilerplate",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "latest"
+  },
+  "scripts": {
+    "package": "zip -r lambda.zip *"
+  }
+}
