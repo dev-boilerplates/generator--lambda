@@ -38,7 +38,19 @@ Once an API is setup, then if the function needs to **respond** then the handler
 * `response` : `context.done(null, { status: 200 })`
 * `error` : `context.done({ status: 400 })`
 
+### Expose as public API
 
+In the API Gateway, add POST AND OPTIONS methods 
+
+`Request` - select Lambda Function (_do not use proxy integration_)
+`Response` - Edit **HEADER MAPPINGS** and add the following:
+
+```
+Access-Control-Allow-Methods 	: "*",
+Access-Control-Allow-Origin 	: "*",
+Access-Control-Expose-Headers	: "*",
+Access-Control-Allow-Headers 	: "*"
+```
 
 ## AWS Logs
 
